@@ -6,8 +6,11 @@ import App from "../App"
 // Write up the two tests here and make sure they are testing what the title shows
 
 test("form header renders", () => {
+    //Arrange
     const app = render(<App />);
+    //Act
     const header = app.getByText(/react plants/i)
+    //Assert
     expect(header).toBeInTheDocument();
 });
 

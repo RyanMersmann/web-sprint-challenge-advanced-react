@@ -15,8 +15,9 @@ const initialValue = {
 // and replace the necessary stateful logic from CheckoutForm with the hook
 
 const CheckoutForm = (props) => {
+  //add useForm
   const [values, setValues, handleChanges] = useForm('')
-
+  //useState for success message on Checkout Form
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   //handleChanges moved to useForm
