@@ -76,7 +76,6 @@ const CheckoutForm = (props) => {
           </p>
           <p>Your new green friends will be shipped to:</p>
           <br />
-          <br />
           <p>
             {values.firstName} {values.lastName}
           </p>
