@@ -29,14 +29,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+## When building a stateful component, you add a constructor and a super to the component. The constructor will contain the state functionality which keeps track of the changing data. Below, you add a render() to render the returned JSX to the screen or the functionality.
 
 2. Describe the different phases of the component lifecycle.
+## Mounting aka "birth": putting elements into the DOM for use
+## Updating aka "life": props and state data is updated or changed.
+## Unmounting aka "death": Component will be removed from the DOM
 
 3. Demonstrate an understanding of class component lifecycle methods.
+## In applications with lots of components like facebook or Reddit, it’s important to free up space/resources used by the components when they are finished and done with. .So we mount a component which inserts elements into the DOM, setting it up for use. Next we update the data in state or props and it is used in the app. Lastly we unmount it to clear up space for other resources to run.
 
 4. Define stateful logic.
+## Stateful logic is a component or code that uses state. You might use stateful logic in a hook component to store or change data as a customizable and reusable function aka custom hook.
 
 5. Describe how to test a React component with React Testing Library.
+## To test a react component, you use the basic guideline of "arrange, act, assert". First you arrange your test by setting up the code to be tested. Then you act or call a method or function that returns a result that is relevent to the test. For example, if it is a text field for emails, you would want to test out email strings. Next you return and assert that what got returned was what you were actually expecting as a result.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -54,10 +61,10 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Basic set up**
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [done] Create a forked copy of this project
+- [done] Add your team lead as collaborator on Github
+- [done] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [done] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 **Starting the server**
 
